@@ -1,0 +1,30 @@
+{
+  "name": "typescript-react-vite",
+  "version": "1.0.0",
+  "description": "Boilerplate react + typescript + vite (esbuild)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "typescript",
+    "react",
+    "vite"
+  ],
+  "author": "olivier laffon",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.0.2"
+  },
+  "type": "module"
+}
