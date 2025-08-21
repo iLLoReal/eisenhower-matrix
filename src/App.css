@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+
+.eisenhower {
+    --axis: #9b9b9b;
+    --thick: 16px;
+    --gap: 24px;
+
+    position: relative;
+    width: 720px;
+    aspect-ratio: 16/9;
+    background: #fff;
+    /* axes = “bordures” */
+    border-left: var(--thick) solid var(--axis);
+    border-bottom: var(--thick) solid var(--axis);
+    margin: 24px auto;
+}
+
+/* flèche haut (axe importance) */
+.eisenhower::before,
+.eisenhower::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 22px solid transparent;
+}
+
+.eisenhower::before {
+    left: -30px;
+    top: -2px;
+    border-bottom-color: var(--axis);
+}
+
+/* flèche droite (axe urgence) */
+.eisenhower::after {
+    right: -2px;
+    bottom: -30px;
+    border-left-color: var(--axis);
+}
+
+/* grille 2×2 */
+.grid {
+    position: absolute;
+    inset: 32px 48px 56px 56px;
+    /* laisse la place pour axes */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--gap);
+}
+
+.q {
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .06);
+}
+
+.q1 {
+    background: #f5bcbc;
+}
+
+/* important + urgent */
+.q2 {
+    background: #f7c9c9;
+}
+
+/* important non urgent */
+.q3 {
+    background: #cdd7cd;
+}
+
+/* non important mais urgent */
+.q4 {
+    background: #c2d0c2;
+}
+
+/* non important non urgent */

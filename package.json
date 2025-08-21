@@ -16,15 +16,20 @@
   "author": "olivier laffon",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
     "@types/react-dom": "^19.0.2",
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.7.2",
     "vite": "^6.0.3"
   },
   "dependencies": {
+    "immer": "^10.1.1",
+    "lucide-react": "^0.539.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.0.2"
+    "react-router": "^7.0.2",
+    "tailwindcss": "^4.1.11",
+    "zustand": "^5.0.7"
   },
   "type": "module"
 }
