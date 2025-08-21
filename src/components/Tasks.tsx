@@ -12,7 +12,7 @@ export default function Tasks({ tasks }: { tasks: Task[] }) {
         <>
             <ul className="flex flex-col items-start list-disc">
                 {
-                    currentTasks?.map((task, index) =>
+                    currentTasks?.map((task) =>
                         <li key={task.id}>{task.desc}</li>
                     )
                 }
